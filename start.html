@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+    <style>
+        /* Container to center-align the button */
+        .container {
+            position: relative;
+            text-align: center;
+        }
+
+        /* Style for the big red button */
+        .big-btn {
+            padding: 20px 40px;
+            font-size: 24px;
+            background-color: #FF0000; /* Red background color */
+            color: #FFFFFF; /* White text color */
+            border: 2px solid #000000; /* Black border */
+            border-radius: 10px; /* Rounded corners */
+            cursor: pointer;
+            text-decoration: none; /* Remove underline for anchor tag */
+            display: inline-block; /* Display as inline block to control padding */
+        }
+
+        /* Style for the button hover effect */
+        .big-btn:hover {
+            background-color: #FF3333; /* Lighter red background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Big red button with link to the second HTML file -->
+        <a href="second.html" class="big-btn">Enter</a>
+    </div>
+
+    <script>
+        // Check if the page was loaded or refreshed
+        if (performance.navigation.type === 1) {
+            // Page was reloaded, redirect to another page
+            window.location.href = "error.html"; // Redirect to an error page or any other page
+        }
+    </script>
+</body>
+</html>
